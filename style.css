@@ -97,6 +97,9 @@ h3
 .intro 
 {
     padding-bottom:  10em;
+    max-width: 730px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .intro_logo
 {
@@ -118,7 +121,11 @@ h3
     align-items: center;
     gap: 1.5em;
 }
-
+.section_intro {
+    max-width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .section_title {
     margin-bottom: .57em;
 }
@@ -132,13 +139,21 @@ h3
     width: 100%;
     display: block;
     margin-bottom: 3.5em;
+    max-width: 752px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tracking_features {
     display: flex;
     flex-direction: column;
     gap: 3em;
+    max-width: 730px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
 
 .tracking_feature_title {
     margin-bottom: 0.41em;
@@ -159,6 +174,9 @@ h3
 .access_img {
     display: block;
     width: 100%;
+    max-width: 812px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -173,7 +191,11 @@ h3
 .workflow_features {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 3.5em;
+}
+.workflow_feature {
+    max-width: 350px;
 }
 
 .workflow_feature_icon 
@@ -196,6 +218,13 @@ h3
     width: 37%;
     max-width: 165px;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.platforms
+{
+    max-width: 730px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -256,4 +285,132 @@ h3
 .social_item:hover path
 {
     fill: var(--color-3);
+}
+
+
+
+@media (min-width: 1440px)
+{
+    html
+    {
+        font-size: 18px
+    }
+    h1 
+    {
+        font-size: 2.55rem;
+        letter-spacing: -0.016em;
+    }
+    h2 
+    {
+        font-size:2rem;
+        letter-spacing: -0.016em;
+    }
+
+    h3 
+    {
+        font-size:1.33rem;
+        letter-spacing: -0.016em;
+    }
+
+    .btn 
+    {
+        font-size: 1rem;
+    }
+
+
+    .container {
+        padding: 7.1em 11.4% 8.3em;
+        background-image: url(./images/bg-header-desktop.png);
+    }
+
+
+   
+    .intro_body 
+    {
+        font-size:1.11rem;
+    }
+
+   
+
+    .section_btns {
+        flex-direction: row;
+        justify-content: center;
+        gap: .88em;
+    }
+    
+
+    .tracking_intro
+    {
+        margin-bottom: 4.6em;
+    }
+
+
+    .tracking_main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .tracking_img-wrapper 
+    {
+        width:55%;
+        min-height: 572px;
+        position: relative;
+    }
+
+    .tracking_img {
+        width: 120%;
+        position: absolute;
+        left:-12em;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    .tracking_features {
+        width: 31.5%;
+    }
+
+
+
+
+    .workflow_features {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .companies {
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .footer {
+        display: flex;
+        text-align: left;
+        gap:7.5em;
+        padding: 2.16em 11.4%;
+    }
+
+    .footer_links {
+        width: 57%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(auto, 160px));
+    }
+
+    .social
+    {
+        align-self: center;
+    }
+
+
+
+    .social{
+        margin-left: auto;
+    }
+
+    
 }
